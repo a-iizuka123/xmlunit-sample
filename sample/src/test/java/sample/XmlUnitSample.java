@@ -16,12 +16,12 @@ public class XmlUnitSample {
 
     @Test
     public void testSame() {
-    	assertEqualXml("src/test/xml/simple/source.xml", "src/test/xml/simple/comparison-same.xml");
+    	assertEqualXml("src/test/xml/source.xml", "src/test/xml/comparison-same.xml");
     }
 
     @Test
     public void testDiff() {
-    	assertEqualXml("src/test/xml/simple/source.xml", "src/test/xml/simple/comparison-diff.xml");
+    	assertEqualXml("src/test/xml/source.xml", "src/test/xml/comparison-diff.xml");
     }
 
     private void assertEqualXml(String sourcePath, String comparisonPath) {
